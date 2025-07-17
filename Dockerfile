@@ -44,5 +44,8 @@ RUN groupadd lfs && \
 RUN chown root:root $LFS/sources/*
 RUN chown lfs $LFS/{usr,{,/*},var,etc,tools,lib64}
 
+COPY scripts/.bash_profile scripts/.bashrc /home/lfs/
+
 USER lfs
-ENTRYPOINT [ "/bin/bash", "-l" ]
+WORKDIR /home/lfs
+ENTRYPOINT ["/bin/bash", "-l"]
