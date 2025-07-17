@@ -20,7 +20,8 @@ RUN apt update && apt install -y \
     m4                           \
     python3                      \
     texinfo                      \
-    wget
+    wget                         \
+    sudo
 # clean up apt cache
 RUN rm -rf /var/lib/apt/lists/*
 
