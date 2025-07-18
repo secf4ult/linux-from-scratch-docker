@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-tar -xf linux-*.tar.xz
+tar -xf linux-*.tar.*
 cd linux-*/
 
 make mrproper

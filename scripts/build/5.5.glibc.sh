@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-tar -xf glibc-*.tar.xz
+tar -xf glibc-*.tar.*
 cd glibc-*/
 
 ln -sf ../lib/ld-linux-x86-64.so.2 $LFS/lib64

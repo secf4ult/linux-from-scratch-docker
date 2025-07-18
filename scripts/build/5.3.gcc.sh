@@ -1,12 +1,12 @@
 #!/bin/bash
 set -e
 
-tar -xf gcc-*.tar.xz
+tar -xf gcc-*.tar.*
 cd gcc-*/
 
-tar -xf ../mpfr-*.tar.xz
-tar -xf ../gmp-*.tar.xz
-tar -xf ../mpc-*.tar.xz
+tar -xf ../mpfr-*.tar.*
+tar -xf ../gmp-*.tar.*
+tar -xf ../mpc-*.tar.*
 mv mpfr-* mpfr
 mv gmp-* gmp
 mv mpc-* mpc

@@ -1,8 +1,9 @@
 #!/bin/bash
 set -e
 
-tar -xf $LFS/sources/binutils-*.tar.xz
+tar -xf $LFS/sources/binutils-*.tar.*
 cd $LFS/sources/binutils-*/
+
 mkdir -v build
 cd build
 ../configure --prefix=$LFS/tools \

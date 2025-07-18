@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-tar -xf m4-*.tar.xz
+tar -xf m4-*.tar.*
 cd m4-*/
 
 ./configure --prefix=/usr   \
